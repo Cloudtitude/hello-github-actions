@@ -1,0 +1,11 @@
+on: push
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello, World!"
+      # - name: Check GitHub Context
+      #   run: |
+      #     echo "Repository: ${{ github.repository }}"
